@@ -14,3 +14,7 @@ out/production/ContactBook/com/peak2peak/view/PersonEditDialog.fxml
 out/production/ContactBook/com/peak2peak/view/PersonEditDialogController.class
 out/production/ContactBook/com/peak2peak/view/PersonOverview.fxml
 out/production/ContactBook/com/peak2peak/view/PersonOverviewController.class
+out/production/ContactBook/com/peak2peak/model/PersonListWrapper.class
+out/production/ContactBook/com/peak2peak/util/LocalDateAdapter.class
+out/production/ContactBook/com/peak2peak/view/RootLayout.fxml
+out/production/ContactBook/com/peak2peak/view/RootLayoutController.class

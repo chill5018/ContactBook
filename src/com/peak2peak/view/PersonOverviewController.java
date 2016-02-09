@@ -11,6 +11,9 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
 public class PersonOverviewController {
+
+    private Main main;
+
     // Left Table View with First and Last Names
     @FXML
     private TableView<Person> personTable;
@@ -34,6 +37,10 @@ public class PersonOverviewController {
     @FXML
     private Label birthdayLabel;
 
+    // Empty Constructor
+    public PersonOverviewController(){}
+
+
     // Buttons (Add, Edit, Delete)
 
     @FXML
@@ -51,7 +58,6 @@ public class PersonOverviewController {
             alert.setContentText("Please select a person before trying to delete");
             alert.showAndWait();
         }
-
     }
 
     @FXML
@@ -81,16 +87,10 @@ public class PersonOverviewController {
         }
     }
 
-    private Main main;
-
-    public PersonOverviewController(){}
-
     /*
     Initialize the view class
-
     Is Automatically called
     */
-
     @FXML
     private void initialize(){
         firstNameColumn.setCellValueFactory(cellData -> cellData.getValue().fNameProperty());
@@ -115,7 +115,6 @@ public class PersonOverviewController {
     /*
     Fill all text fields to show details about the person
      */
-
     private void showPersonDetails(Person p){
         if (p != null){
             //Fill labels with info from the person object
@@ -136,6 +135,4 @@ public class PersonOverviewController {
 
         }
     }
-
-
 }

@@ -56,9 +56,7 @@ public class PersonEditDialogController {
         return okClicked;
     }
 
-
     /*   Called when user clicks ok  */
-
     @FXML
     private void okButtonClicked() {
         if (isInputValid()) {
@@ -130,6 +128,5 @@ public class PersonEditDialogController {
             return false;
         }
     }
-
 
 }

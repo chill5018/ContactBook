@@ -1,7 +1,9 @@
 package com.peak2peak.model;
 
+import com.peak2peak.util.LocalDateAdapter;
 import javafx.beans.property.*;
 
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.time.LocalDate;
 
 /**
@@ -90,6 +92,7 @@ public class Person {
         this.city.set(city);
     }
 
+    @XmlJavaTypeAdapter(LocalDateAdapter.class) // Tell Birthday to use adapter
     public LocalDate getBirthday() {
         return birthday.get();
     }
