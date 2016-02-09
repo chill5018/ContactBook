@@ -1,7 +1,10 @@
 package com.peak2peak.model;
 
 import com.peak2peak.util.LocalDateAdapter;
+import javafx.beans.InvalidationListener;
 import javafx.beans.property.*;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.time.LocalDate;
@@ -25,12 +28,12 @@ public class Person {
         this.fName = new SimpleStringProperty(fName);
         this.lName = new SimpleStringProperty(lName);
 
-        // Dummy Data
-        this.street = new SimpleStringProperty("Edvards Thomsens Vej");
-        this.postalCode = new SimpleIntegerProperty(2300);
-        this.city = new SimpleStringProperty("København");
-        this.birthday = new SimpleObjectProperty<LocalDate>(LocalDate.of(1990, 7, 28));
+        street = new SimpleStringProperty("");
+        postalCode = new SimpleIntegerProperty();
+        city = new SimpleStringProperty("");
+        birthday = new SimpleObjectProperty<>();
     }
+
 
     public String getfName() {
         return fName.get();
