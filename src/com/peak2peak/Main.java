@@ -58,7 +58,6 @@ public class Main extends Application {
         controller.setMain(this);
 
         primaryStage.show();
-
         showPersonOverview();
     }
 

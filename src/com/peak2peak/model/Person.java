@@ -1,11 +1,7 @@
 package com.peak2peak.model;
 
 import com.peak2peak.util.LocalDateAdapter;
-import javafx.beans.InvalidationListener;
 import javafx.beans.property.*;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.time.LocalDate;
 
